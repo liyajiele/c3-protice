@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		div{
+			margin: 0 auto;
+			width: 500px;
+			height: 400px;
+			background: url(car.jpg) center no-repeat;
+			transform-style: preserve-3d;
+			animation-name: car;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-animation-timing-function:linear;
+		}
+		@keyframes car{
+			0%{
+				transform:rotateY(0deg);
+			}	
+			50%{
+				transform:rotateY(180deg);
+			}
+			100%{
+				transform:rotateY(360deg);
+			}
+		}
+		
+	</style>
+	<body>
+		<div></div>
+	</body>
+</html>

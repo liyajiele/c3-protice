@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		#login{
+			width: 400px;
+			margin: 0 auto;
+		}
+		label{
+			margin-bottom: 5px;
+			display: block;
+		}
+		#name,#pass{
+			font-weight: bold;
+		}
+		input{
+			margin-left: 10px;
+		}
+	</style>
+	<body>
+		<fieldset id="login">
+			<legend>用户登录</legend>
+			<form action="" method="post" class="form">
+				<label for="name">姓名<input type="text" name="name" id="name" value=""/></label>
+				<label for="pass">密码<input type="password" type="text" id="pass" disabled="disabled"/></label>
+				<input type="button" value="提交"/>
+			</form>
+		</fieldset>
+	</body>
+</html>

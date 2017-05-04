@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		table{
+			width: 1000px;
+			border-collapse:collapse ;
+			font-size: 75%;
+			line-height: 1.1;
+			margin: 0 auto;
+		}
+		tr:hover,td:hover{
+			background: #ff9;
+		}
+		th,td{
+			padding: 5px;
+			cursor: pointer;
+			/*text-align: center;*/
+		}
+		th{
+			text-align: left;
+			padding-left:15px ;
+		}
+		td:only-of-type{
+			background: #eee;
+			padding-left: 28px;
+			font-weight: bold;
+			color: #444;
+		}
+		thead th{
+			background: #cec6da;
+			border-color: #fff #fff #888 #FFF;
+			border-style: solid;
+			border-width: 1px 1px 2px 1px;
+			padding-left: 5px;
+			text-align: center;
+		}
+	</style>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>排名</th><th>校名</th><th>总得分</th><th>所属省份</th><th>分省排名</th><th>学校类型</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="6">一类</td>
+				</tr>
+				<tr>
+					<td>1</td><td>清华大学</td><td>296.77</td><td>京</td><td>1</td><td>理工</td>
+				</tr>
+				<tr>
+					<td>1</td><td>清华大学</td><td>296.77</td><td>京</td><td>1</td><td>理工</td>
+				</tr>
+				<tr>
+					<td colspan="6">二类</td>
+				</tr>
+				<tr>
+					<td>1</td><td>清华大学</td><td>296.77</td><td>京</td><td>1</td><td>理工</td>
+				</tr>
+				<tr>
+					<td>1</td><td>清华大学</td><td>296.77</td><td>京</td><td>1</td><td>理工</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		body{
+			background: #ededed;
+			width: 900px;
+			margin: 20px auto;
+			color: #666666;
+		}
+		a{
+			color: #333333;
+		}
+		.box{
+			margin: 0;
+			padding: 7px 6px 0;
+			line-height: 100%;
+			border-radius: 20px;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+			background: #8b8b8b;
+			border: 1px solid #6d6d6d;
+		}
+		.box li{
+			margin: 0 5px;
+			padding: 0 0 8px;
+			float: left;
+			position: relative;
+			list-style: none;
+		}
+		.box a{
+			font-weight: bold;
+			color: #e7e5e5;
+			text-decoration: none;
+			display: block;
+			padding: 8px 20px;
+			margin: 0;
+			border-radius: 16px;
+			text-shadow: 0 1px 1px rgba(0,0,0,0.3);
+			
+		}
+		.box .current a,.box li:hover a{
+			background: #d1d1d1;
+			color: #444444;
+			border-top: 1px solid #f8f8f8;
+			box-shadow: 0 1px 0 rgba(255,255,255,0.8);
+		}
+		.box ul li:hover a,.box li:hover li a{
+			background: none;
+			border: none;
+			color: #666666;
+			box-shadow: none;
+		}
+		.box ul a:hover{
+			background: #0399de !important;
+			color: #fff !important;
+			border-radius: 0;
+			box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+		}
+		.box ul{
+			background: #DDDDDD;
+			display: none;
+			margin: 0;
+			padding: 0;
+			width: 185px;
+			position: absolute;
+			top: 35px;
+			left: 0;
+			border-radius: 10px;
+			box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+			border: 1px solid #b4b4b4;
+		}
+		.box li:hover>ul{
+			display: block;
+		}
+		.box ul li{
+			float: none;
+			margin: 0;
+			padding: 0;
+		}
+		.box ul a{
+			font-weight: normal;
+			text-shadow: 0 1px 1px rgba(255,255,255,0.9);
+		}
+		.box ul ul{
+			left: 181px;
+			top: -3px;
+		}
+		.box ul li:first-child>a{
+			border-top-right-radius: 9px;
+		}
+		.box ul li:last-child>a{
+			border-bottom-right-radius: 9px;
+		}
+		.box:after{
+			content: ".";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+		.box{
+			display: inline-block;
+		}
+		
+	</style>
+	<body>
+		<ul class="box">
+			<li class="current"><a href="#">首页</a></li>
+			<li><a href="#">新闻</a>
+				<ul class="sbox">
+					<li><a href="#">国际新闻</a></li>
+					<li><a href="#">国内新闻</a>
+						<ul class="ssbox">
+							<li><a href="#">地方新闻</a></li>
+							<li><a href="#">科技新闻</a>
+								<ul class="sssbox">
+									<li><a href="#">移动互联网发展趋势</a></li>
+									<li><a href="#">云计算</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">论坛</a></li>
+			<li><a href="#">微博</a></li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		body{
+			background: url(chun.jpg) no-repeat;
+			background-size: cover;
+		}
+		ul,li{
+			list-style: none;
+		}
+		ul a{
+			text-decoration: none;
+			background: #FFFFFF;
+			display: block;
+			width: auto;
+			color: #FFFFFF;
+			text-align: center;
+			font-size: 18px;
+			padding: 10px 10px 15px;
+			float: left;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+			transform: rotate(-2deg);
+			transition: transform 0.15s linear;
+			display: inline;
+		}
+		ul>li{
+			float:left;
+			margin:20px;
+		}
+		ul>img{
+			display: block;
+			heighgt:100px;
+		     margin-bottom: 12px;
+		}
+		ul li:nth-of-type(even){
+			transform: rotate(5deg);
+		}
+		ul li:nth-of-type(2n) a{
+			position: relative;
+			top: -5px;
+			transform: none;
+		}
+		ul li a:hover{
+			transform: scale(1.5);
+			box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+		}
+	</style>
+	<body>
+		<ul class="wall">
+			<li><a href="1" title="相识"><img src="lyj_1.jpg" alt="相识" /></a></li>
+			<li><a href="2" title="凝视"><img src="lyj_2.jpg" alt="凝视" /></a></li>
+			<li><a href="4" title="逗乐"><img src="lyj_1.jpg" alt="逗乐" /></a></li>
+			<li><a href="3" title="甜睡"><img src="lyj_2.jpg" alt="甜睡" /></a></li>
+			<li><a href="5" title="漠视"><img src="lyj_1.jpg" alt="漠视" /></a></li>
+			<li><a href="6" title="胜景"><img src="lyj_2.jpg" alt="胜景" /></a></li>
+		</ul>
+	</body>
+</html>

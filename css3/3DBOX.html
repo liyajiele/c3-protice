@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		.cube{
+			position: fixed;
+			left: 50%;
+			top: 12px;
+		}
+		.one{
+			top: 200px;
+			left: 50%;
+			margin-left: -200px;
+		}
+		.rightface,.leftface,.topface div{
+			padding: 0px;
+			width: 180px;
+			height: 180px;
+			border: solid 1px #DDA0DD;
+		}
+		.cube img{
+			width: 180px;
+			height: 180px;
+		}
+		.rightface,.leftface,.topface{
+			position: absolute;
+		}
+		.cube:hover .rightface, .cube:hover .leftface, .cube:hover .topface div{
+			background-color: #FFCCFF;
+		}
+		.cube:hover .rightface:hover,.cube:hover .leftface:hover,.cube:hover .topface:hover div{
+			background-color: #ffa;
+		}
+		.leftface{
+			transform: skew(0deg,30deg);
+			background-color: #CCCCCC;
+		}
+		.rightface{
+			transform: skew(0,-30deg);
+			background-color: #DDDDDD;
+			left: 180px;
+		}
+		.topface div{
+			transform: skew(0deg,-30deg) scale(1,1.16);
+			background-color: #EEEEEE;
+			font-size: 14px;
+		}
+		.topface{
+			transform: rotate(60deg);
+			top: -142px;
+			left: 89px;
+		}
+		.cube{
+			transition: transform 1s linear;
+			margin: 0 auto;
+		}
+		.cube:hover{
+			transform: :translate(202px,115px);
+		}
+		img{
+			width:100%;
+		}
+	</style>
+	<body>
+		<div class="cube one">
+			<div class="topface">
+				<div><img src="1.jpg" alt="" /></div>
+			</div>
+			<div class="leftface"><img src="2.jpg" alt="" /></div>
+			<div class="rightface"><img src="3.jpg" alt="" /></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		body{
+			background: #fff;
+		}
+		.tunes{
+			position: relative;
+			width: 200px;
+			height: 300px;
+			float: left;
+			margin-left: 20px;
+			text-shadow: 0 2px 3px rgba(0,0,0,0.75);
+			background: #000000;
+		}
+		.album{
+			margin: 0 0 48px 0;
+			display: inline;
+			width: 200px;
+			height: 120px;
+			position: absolute;
+			text-decoration: none;
+			transition: all 0.15s linear;
+			color: #333333;
+			left: 0px;
+			top: 0px;
+			opacity: 0.95;
+			text-align: center;
+		}
+		.tunes img{
+			width: 120px;
+			position: relative;
+			z-index: 33;
+			float: left;
+			box-shadow: 0 3px 6px rgba(0,0,0,0.5);
+			border-radius: 2px;
+		}
+		.album  h5{
+			text-align: center;
+		}
+		.album:hover {
+			opacity: 1;
+		}
+		.album .vin{
+			width: 116px;
+			height: 116px;
+			z-index:1 ;
+			display: block;
+			transition: all 0.25s linear;
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			margin-left: 16px;
+		}
+		.album .vin div{
+			position: absolute;
+			top: 2px;
+			left: 2px;
+			display: block;
+			z-index: 0;
+			width: 112px;
+			height: 112px;
+			border-radius: 59px;
+			box-shadow: 0 0 6px rgba(0,0,0,0.5);
+			transition: all 0.25s linear;
+			overflow: hidden;
+			border: solid 1px black;
+			background:repeating-radial-gradient(circle,pink,plum 10%,red);
+			border-top: 1px solid rgba(255,255,255,0.25);
+			
+		}
+		.album:hover .vin {
+			transform: translateX(60px) rotate(360deg);
+			/*transform: ;*/
+			transition: transform 1s linear;
+			border-top: 0;
+			border-left: 1px solid rgba(255,255,255,0.25);
+		}
+		.tunes h5{
+			padding-top: 8px;
+			color: #FFFFFF;
+		}
+		.tunes small{
+			color: #FFFFFF;
+			opacity: 0.5;
+		}
+		.zi{
+			position: absolute;
+		    top: 123px;
+		    left: 30px;
+		}
+	</style>
+	<body>
+		<div class="tunes">
+			<div class="album">
+				<a href=""><img src="lyj_1.jpg/"></a>
+				<span class="vin">
+					<div></div>
+				</span>	
+			</div>
+			<div class="zi">
+				<h5>致爱</h5>
+				<small>作词：朱婧汐<br />作曲：Matthew Tishler <br />演唱:鹿晗</small>
+			</div>
+		</div>
+	</body>
+</html>

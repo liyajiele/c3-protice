@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+		body{
+			background:linear-gradient(pink,plum);
+			padding: 0;
+			margin: 0;
+		}
+		.bigbox{
+			position: fixed;
+			bottom: 12px;
+			height: 120px;
+			padding: 50px 0 0;
+			text-align: center;
+			border-radius:6px;
+			width: 100%;
+			line-height: 120px;
+			z-index:111;
+		}
+		.box{
+			width: auto;
+			display: inline-block;
+			border-bottom: solid 2px rgba(255,255,255,0.35);
+			line-height: 0;
+		}
+		.bottom{
+			display: inline-block;
+			height: 130px;
+			padding: 0 40px 0 0;
+			overflow: hidden;
+			margin: 0 0 0 40px;
+		}
+		.bottom li{
+			display: block;
+			position: relative;
+			float: left;
+			width: 50px;
+			height: 50px;
+			margin: 60px 0 4px 0;
+			transition: 0.15s linear;
+			transition-property: transform margin;
+			text-align: center;
+		}
+		.bottom li a{
+			display: block;
+			height: 50px;
+			padding: 0 1px;
+			transition: 0.15s linear;
+			transition-property:transform margin ;
+			margin: 0;
+			-webkit-box-reflect: below 2px -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(0.45,transparent),to(rgba(255,255,255,0.25)));
+		}
+		.bottom li img{
+			width: 48px;
+			
+		}
+		.bottom li:hover{
+			margin-left: 9px;
+			margin-right: 9px;
+			z-index: 200;
+		}
+		.bottom li:hover a{
+			transform-origin: center bottom;
+			transform: scale(1.5);
+		}
+		.bottom li span{
+			position: absolute;
+			bottom: 80px;
+			margin: 0 auto;
+			display: none;
+			width: auto;
+			font-size: 11px;
+			font-weight: bold;
+			padding: 3px 6px;
+			border-radius:6px;
+			color: #FFFFFF;
+			
+		}
+		.bottom li:hover span{
+			display: block;
+		}
+		
+	</style>
+	<body>
+		<div class="bigbox">
+			<div class="box">
+				<ul class="bottom">
+					<li><span>1</span><a href="#" title="1"><img src="1.jpg" alt="" /></a></li>
+					<li><span>2</span><a href="#" title="2"><img src="2.jpg" alt="" /></a></li>
+					<li><span>3</span><a href="#" title="3"><img src="3.jpg" alt="" /></a></li>
+					<li><span>4</span><a href="#" title="4"><img src="4.jpg" alt="" /></a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style>
+       *{
+       	margin: 0 ;
+       	padding: 0;
+       }
+       ul,li{
+       	list-style: none;
+       }
+       body{
+       		padding: 20px;
+       }
+       .payment{
+	       	border-radius: 5px;
+	       	width: 500px;
+	       	background: #ccc;
+	       	margin: 0 auto;
+	       	padding: 20px;
+       }
+       .payment fieldset{
+	       	border: none;
+	       	margin-bottom: 10px;
+       }
+       .payment legend{
+	       	color: #384313;
+	       	font-size: 16px;
+	       	font-weight: bold;
+	       	padding-top: 10px;
+	       	padding-bottom: 10px;
+	       	text-shadow: 0 1px 1px #c0d576;
+       }
+       .payment>fieldset>legend:before{
+	       	content:"Step" counter(fieldests)":";
+	       	counter-increment: fieldsets;
+       }
+       .payment li{
+	       	background: #b9cf6a;
+	       	background: rgba(255,255,255,0.3);
+	       	border:2px solid #e3ebc3;
+	       	border-radius: 5px;
+	       	line-height: 30px;
+	       	padding: 5px 10px;
+	       	margin-bottom: 2px;
+	       	text-align: center;
+       }
+       .payment fieldset fieldset legend{
+	       	color: #111111;
+	       	font-size: 13px;
+	       	font-weight: normal;
+	       	padding-bottom: 0;
+       }
+       .payment ul ul li{
+	       	background: none;
+	       	border: none;
+	       	float: left;
+       }
+       .payment fieldset fieldset label:hover{
+       		cursor: pointer;
+       }
+       .payment fieldset botton{
+       	   	text-align: center;
+		    border: 2px solid #000;
+		    padding: 5px 10px;
+		    border-radius: 5px;
+		    margin-left: 200px;
+		    margin-top: 20px;
+       }
+	</style>
+	<body>
+	   <form action="" class="payment">
+	   	<fieldset id="">
+	   		<legend>用户详细资料</legend>
+	   		<ul>
+	   			<li>
+	   				<lable for=name>用户名称：</lable>
+	   				<input type="text" id=name name=name placeholder="请输入用户名" required autofocus/>
+	   			</li>
+	   			<li>
+	   				<lable for=mail>邮箱地址：</lable>
+	   				<input type="text" id=mail name=mail placeholder="example@163.com" required="required"/>
+	   			</li>
+	   			<li>
+	   				<lable for=phone>联系电话：</lable>
+	   				<input type="text" id=phone name=phone placeholder="010-13456746560" required="required" />
+	   			</li>
+	   		</ul>
+	   	</fieldset>
+	   	<fieldset id="">
+	   		<legend>家庭住址（收货地址）:</legend>
+	   		<ul>
+	   			<li>
+	   				<lable for=adress>详细地址：</lable>
+	   				<textarea id=adress name=adress rows=1 required /></textarea>
+	   			</li>
+	   			<li>
+	   				<lable for=postcode>邮政编码：</lable>
+	   				<input type="text" id=postcode name=postcode required="required"/>
+	   			</li>
+	   			<li>
+	   				<lable for=country>国&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家：</lable>
+	   				<input type="text" id=country name=country required="required" />
+	   			</li>
+	   		</ul>
+	   	</fieldset>
+	   	   	<fieldset id="">
+	   		<legend>付费方式:</legend>
+	   		<ul>
+	   			<li>
+   				   	<fieldset id="">
+				   		<legend>信用卡类型:</legend>
+				   		<ul>
+				   			<li>
+				   				<input type="radio" id="visa" name="cardtype" />
+				   				<lable for=visa>中国工商银行</lable>
+				   			</li>
+				   			<li>
+				   				<input type="radio" id="amex" name="cardtype" />
+				   				<lable for=amex>中国人民银行</lable>
+				   			</li>
+				   			<li>
+				   				<input type="radio" id="mastercard" name="cardtype" />
+				   				<lable for=mastercard>中国建设银行</lable>
+				   			</li>
+				   		</ul>
+				   	</fieldset>
+	   			</li>
+	   			<li>
+	   				<lable for=cardnum>银行卡号：</lable>
+	   				<input type="text" id=cardnum name=cardnum required="required"/>
+	   			</li>
+	   			<li>
+	   				<lable for=secure>验&nbsp;&nbsp;证&nbsp;&nbsp;码：</lable>
+	   				<input type="text" id=secure name=secure required="required"/>
+	   			</li>
+	   			<li>
+	   				<lable for=namecard>持&nbsp;&nbsp;卡&nbsp;&nbsp;人：</lable>
+	   				<input type="text" id=namecard name=namecard required="required" />
+	   			</li>
+	   		</ul>
+	   	</fieldset>
+	   	<fieldset id="">
+	   		<botton type=submit>现在购买</botton>
+	   	</fieldset>
+	   </form>
+	</body>
+</html>
